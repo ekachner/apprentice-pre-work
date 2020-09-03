@@ -1,0 +1,272 @@
+/* BEGIN - CSS RESET */
+body {
+    margin: 0;
+    background: repeating-linear-gradient(45deg, rgb(224, 54, 88) 0%, rgba(224, 54, 88) 60%, dodgerblue 100%);
+    width: 100vw;
+    height: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: center;
+}
+/* END - CSS RESET */
+
+/* BEGIN - Navbar styles */
+nav {
+    background-color: rgba(255, 255, 255, 20%);
+    /*background-color: green;*/
+    margin-bottom: 2rem;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+}
+
+
+.navbar-brand img {
+    padding: 20px 0 0 0;
+    justify-content: center;
+}
+/* END - Navbar styles */
+
+/* BEGIN - Layout styles */
+.container {
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hero {
+    padding-right: 30px;
+    padding-bottom: 100px;
+}
+
+
+/* END - Layout styles */
+
+/* BEGIN - Form styles */
+#submissionForm {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column; 
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 0;
+}
+
+.personalInfo {
+     text-align: left;   
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.personalInfo input{
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+}
+
+#firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-gap: 25px;
+
+}
+
+#secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-gap: 25px;
+}
+
+#thirdRow input{
+    height: 230px;
+    margin-bottom: 25px;
+}
+
+
+
+#buttonRow {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    grid-column-gap: 20px;
+}
+
+[type="checkbox"] {    
+    border-radius: 50px;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #74cc84;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#click {
+    display: none;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.field:not(:last-child) {
+    margin-bottom: 2rem;
+}
+/* END - Form styles */
+
+
+
+/* BEGIN - Footer Styles */
+footer {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+.colorStrip {
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.blue {
+    background-color: dodgerblue;
+    flex-grow: 1;
+}
+
+.orange {
+    background-color: #f14819;
+    flex-grow: 1;
+}
+
+.yellow {
+    background-color: gold;
+    flex-grow: 1;
+}
+
+
+.green {
+    background-color: #74cc84;
+    flex-grow: 1;
+}
+
+.crimson {
+    background-color: rgb(224, 54, 88);
+    flex-grow: 1;
+}
+
+.footerContainer {
+    width: 1280px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 30px;
+    margin: 40px 0;
+    line-height: 0px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.text {
+    text-align: right;
+}
+
+
+/* END - Footer Styles */
+
+
+
+/* BEGIN - Modal styles */
+
+
+#modal {
+    position: absolute;
+    height: 180px;
+    width: 1280px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 100px;
+    margin: 0 100px;
+    background-color: #74cc84;
+}
+
+/*#click > #buttonRow > #submissionForm > .container :checked ~ #modal {
+    opacity: 1;
+    visibility: visible;
+}*/
+
+
+/*&#10006;*/
+#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modal .message {
+    padding: 5rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+#modal .message.success {
+    background-color: #74cc84;
+}
+
+#modal .message.error {
+    background-color: #f14819;
+}
+
+/*#modal .close {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}*/
+
+/* END - Modal styles */
+
