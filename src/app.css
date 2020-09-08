@@ -117,9 +117,9 @@ button {
 }
 
 
-/*.hidden {
+.hidden {
     display: none !important;
-}*/
+}
 
 .field {
     display: flex;
@@ -223,8 +223,7 @@ h5 {
     padding: 0 100px;
     margin: 0 100px;
     background-color: #74cc84;
-    opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 /*#click > #buttonRow > #submissionForm > .container :checked ~ #modal {

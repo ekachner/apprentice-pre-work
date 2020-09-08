@@ -57,15 +57,10 @@
                     </div>
                 </div>
                 <div  id="buttonRow">
-                    <button id="testSubmit" type="checkbox">TEST SUBMIT</button>
+                    <button id="testSubmit" type="button">TEST SUBMIT</button>
                     <button id="submit" type="button">SUBMIT</button>
                 </div>
             </form>
-        </div>
-        <div id="modal" class="">
-            <div id="close" class="fas fa-times" ></div>
-            <img alt="trophy" src="/dist/assets/trophy.png">
-            <div class="message">Congratulations! You did it! You are one step closer to becoming an Array Apprentice!</div>
         </div>
     </main>
     <footer>
@@ -89,6 +84,11 @@
                 </div>
                 <img id="logo" alt="Array Tree Logo" src="/dist/assets/array-tree-brand.png">
             </div>
+        </div>
+        <div id="modal" class="hidden">
+            <div class="close fas fa-times"></div>
+            <img alt="trophy" src="/dist/assets/trophy.png">
+            <div class="message">Congratulations! You did it! You are one step closer to becoming an Array Apprentice!</div>
         </div>
     </footer>
     <script src="./main.bundle.js"></script>

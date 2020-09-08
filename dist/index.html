@@ -3,39 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Applicant Pre-work</title>
+    <title>Apprentice Pre-Work</title>
+
+    <link rel="stylesheet" href="/src/app.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 <body>
     <nav>
         <div class="container">
             <a href="https://arrayschool.com" class="navbar-brand">
-                <img src="/assets/array-text-logo.png" />
+                <img src="/dist/assets/array-text-logo.png" />
             </a>
         </div>
     </nav>
     <main>
         <div class="container">
+            <div id="hero">
+                <img alt="people standing around computer" src="/dist/assets/coding-graphic.png">
+                <h2>We're changing education...<u>forever!</u></h2>
+                <p>Do you have what it takes? Join us as we forge ahead into a better future we're creating together.</p>
+            </div>
             <form id="submissionForm">
+                <h1>Tell Us All About Yourself!</h1>
+                <p>We love to hear from fucks just like you, so fill out our simple form and we'll be in touch as soon as possible.</p>
                 <input type="hidden" id="fromEmail" name="fromEmail" value="dev@arrayschool.com" />
-                <div class="field">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" value=""/>
+                <div class="personalInfo">
+                    <div id="firstRow">
+                        <div class="field">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" value="" required/>
+                        </div>
+                        <div class="field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" value="" required/>
+                        </div>
+                    </div>
+                    <div id="secondRow">
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" value="" required/>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="" required/>
+                        </div>
+                    </div>
+                    <div id="thirdRow">
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <input type="text" id="message" name="message" value="" required/>
+                        </div>
+                    </div>
                 </div>
-                <div class="field">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" value=""/>
-                </div>
-                <div class="field">
-                    <button id="testSubmit" type="button">Test Submit</button>
-                    <button id="submit" type="button">Submit</button>
+                <div  id="buttonRow">
+                    <button id="testSubmit" type="button">TEST SUBMIT</button>
+                    <button id="submit" type="button">SUBMIT</button>
                 </div>
             </form>
         </div>
     </main>
     <footer>
+        <div class="colorStrip">
+            <div class="blue"></div>
+            <div class="orange"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="crimson"></div>
+        </div>
+        <div class="footerContainer">
+            <div class="footerContent">
+                <div class="text">
+                    <hr><br>
+                    <h5>The Array School of Technology and Design</h5>
+                    <h5>106 East Lincolnway, Suite 420</h5>
+                    <h5>Cheyenne, WY 82001</h5>
+                    <h5>office@arrayschool.com</h5>
+                    <h5>307-274-4500</h5>
+                    <h5>&copy Array, Inc.</h5>
+                </div>
+                <img id="logo" alt="Array Tree Logo" src="/dist/assets/array-tree-brand.png">
+            </div>
+        </div>
         <div id="modal" class="hidden">
-            <div class="close">&#10006;</div>
-            <div class="message"></div>
+            <div class="close fas fa-times"></div>
+            <img alt="trophy" src="/dist/assets/trophy.png">
+            <div class="message">Congratulations! You did it! You are one step closer to becoming an Array Apprentice!</div>
         </div>
     </footer>
     <script src="./main.bundle.js"></script>
